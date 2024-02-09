@@ -1,0 +1,288 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: black;
+    display: flex;
+    /* height: calc(250vh + 29px); */
+    height: auto;
+}
+body:hover {
+    scroll-behavior: smooth;
+}
+
+.side-bar {
+    margin: 0;
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    background-color: black;
+    z-index: 100;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.side-bar-container{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    position: relative;
+}
+
+.side-bar .logo {
+    width: 150px;
+    height: 140px;
+    margin: 20px auto;
+}
+.side-bar .logo .image-container {
+    width: 130px;
+    height: 130px;
+    background-image: url('Images/blueBird.jpg');
+    background-size: cover;
+    border-radius: 10px;
+    margin: 5px auto;
+}
+.side-bar .logo p {
+    font-size: 20px;
+    color: #6c7578;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.side-bar .logo p span {
+    color: #3333cc;
+}
+
+.side-bar .buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
+}
+
+.side-bar .buttons button {
+    background-color: #15171a;
+    width: 85%;
+    height: 40px;
+    margin: 7px 0;
+    border-radius: 7px;
+    outline: none;
+    cursor: pointer;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    border:2px solid black;
+}
+.side-bar .buttons :first-child{
+    border:2px solid #2463ea;
+    background-color: #2463ea70;
+}
+.side-bar .buttons :hover{
+    border:2px solid #2463ea;
+    background-color: #2463ea70;
+}
+.side-bar .login {
+    transform: translateY(170px);
+    width: 90%;
+    height: 40px;
+    margin: 10px auto;
+    position: absolute;
+    bottom: 35px;
+    left: 50%;
+    transform: translateX(-50%);
+    
+}
+.side-bar .login button {
+    width: 100%;
+    height: 100%;
+    border: #fff solid 1px;
+    border-radius: 5px;
+    background-color: #333;
+    color: #2463ea;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.rest-of-page{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top:0;
+    left:250px;
+    width: calc(100% - 250px);
+    height: auto;
+}
+
+#bar{
+    display: none;
+}
+#bar i{
+    font-size: 22px;
+    color: #fff;
+    cursor: pointer;
+}
+nav{
+    background: linear-gradient(to right, #9733a7, #0a7c95);
+    width: calc(100% - 250px);
+    height: 20vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: fixed;
+    z-index: 99;
+}
+nav .search-bar{
+    width:55%;
+    height: 7vh;
+    
+}
+nav .search-bar input{
+    width:100%;
+    height: 100%;
+    padding: 15px;
+    outline: none;
+    border: none;
+    font-size: 16px;
+    border: #2463eac0 solid 1px;
+    border-radius: 13px;
+}
+
+.content {
+    width: 100%;
+    position: absolute;
+    top: 20vh;
+    height: auto;
+    background-color: #10151f; /* Add a background color to the content area */
+    color: white; /* Text color in the content area */
+    overflow: hidden;
+    padding-bottom:30px;
+    border-bottom: 1px solid #ffd900;
+}
+.content .suggestions {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    
+}
+.content .suggestions .row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.content .suggestions button{
+    
+    padding: 12px;
+    border-radius: 21px;
+    margin: 5px;
+    border: #10151f solid 1px;
+    cursor: pointer;
+    background-color: #1e283a;
+    color: #fff;
+    font-size: 14px;
+}
+
+/* Apply active styles when the button is focused or active (clicked) */
+.content .suggestions button:focus,
+.content .suggestions button:active {
+    background-color: #fff;
+    color: #1e283a;
+    /* Add any additional styles for the active button */
+}
+
+/* Hover effect for non-active buttons */
+.content .suggestions button:hover:not(:focus):not(:active) {
+    background-color: #2c3d54;
+}
+.Genres{
+    display: flex;
+    flex-direction: column;
+}
+.Genres h1{
+    color: #93c7fc;
+    font-size: 32px;
+    font-weight: bold;
+    margin: 10px auto;
+}
+.Genres .posters-container {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 25px; /* Add spacing between the suggestions and the posters */
+    flex-wrap: wrap;
+    height: 100%;
+}
+
+.Genres .posters-container .poster {
+    position: relative;
+    width: 22%;
+    min-width: calc(20% * 1200px);
+    height: 55vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 10px; /* Add spacing between posters */
+    cursor: pointer;
+    margin: 15px;
+
+}
+.Genres .posters-container .poster img {
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    object-fit: cover;/* Ensure the image fills the container while maintaining aspect ratio */
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+/* ============================================== */
+/* Define keyframes for the scaling animation */
+@keyframes scaleUp {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.15);
+    }
+}
+@keyframes scaleDown {
+    0% {
+        transform: scale(1.15);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* ============================================== */
+
+.Genres .posters-container .poster i{
+    position: absolute;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    background-color: transparent;
+    color: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: filter 0.4s ease, opacity 0.4s ease;
+}
+.Genres .posters-container .poster i:hover ,.Genres .posters-container .poster i:active{
+    color: gold;
+}
+
+
+
+#footer{
+    color: #fff;
+    height: 60vh;
+    width: calc(100% - 250px);
+    background-color: yellowgreen;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 0;
+    left: 250px;
+}

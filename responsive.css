@@ -1,0 +1,142 @@
+@media screen and (max-width: 1150px) {
+    .Genres .posters-container .poster {
+        width: 28%; /* Adjust width for three posters in one row */
+    }
+}
+@media screen and (max-width: 1050px) {
+    .Genres .posters-container .poster {
+        height: 50vh;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .Genres .posters-container .poster {
+        height: 45vh;
+    }
+}
+@media screen and (max-width: 950px) {
+    .Genres .posters-container .poster {
+        height: 60vh;
+        width: 45%;
+    }
+}
+@media screen and (max-width: 870px) {
+    .Genres .posters-container .poster {
+        height: 48vh;
+        width: 43%;
+    }
+}
+@media screen and (max-width: 830px) {
+    .Genres .posters-container .poster {
+        height: 48vh;
+        width: 40%;
+    }
+    nav .search-bar{
+        width: 80%;
+    }
+}
+@media screen and (max-width: 780px) {
+    .Genres .posters-container .poster {
+        height: 70vh;
+        width: 65%;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .Genres .posters-container .poster {
+        width: 70%;
+        height: 85vh;
+    }
+}
+@media screen and (max-width: 725px) {
+    .Genres .posters-container .poster {
+        width: 90%;
+        height: 90vh;
+    }
+}
+@media screen and (max-width: 700px) {
+    .Genres .posters-container .poster {
+        width: 75%;
+        height: 60vh;
+    }
+    nav .search-bar{
+        width: 85%;
+    }
+}
+@media screen and (max-width: 630px) {
+    
+    .Genres .posters-container .poster {
+        width: 70%;
+        height: 58vh;
+    }
+    .side-bar{
+        width: 200px;
+    }
+    .rest-of-page{
+        width: calc(100% - 200px);
+        left: 200px;
+    }
+    nav{
+        width: calc(100% - 200px);
+    }
+}
+
+
+
+
+/* Media Query for one poster */
+@media screen and (max-width: 550px) {
+    .Genres .posters-container .poster {
+        width: 80%;
+        height: 58vh;
+    }
+}
+@media screen and (max-width: 500px) {
+    .Genres .posters-container .poster {
+        width: 80%;
+        height: 80vh;
+    }
+    #bar{
+        display: block;
+    }
+    .side-bar{
+        display: none;
+    }
+    .rest-of-page{
+        width: 100%;
+        left: 0;
+    }
+    nav{
+        width: 100%;
+        left: 0;
+        height: 10vh;
+    }
+    .rest-of-page .content{
+        top: 10vh;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .Genres .posters-container .poster {
+        height: 65vh;
+    }
+}
+@media screen and (max-width: 380px) {
+    .Genres .posters-container .poster {
+        height: 60vh;
+    }
+}
+@media screen and (max-width: 320px) {
+    .Genres .posters-container .poster {
+        height: 55vh;
+    }
+}
+@media screen and (max-width: 300px) {
+    .Genres .posters-container .poster {
+        height: 50vh;
+    }
+}
+@media screen and (max-width: 270px) {
+    .Genres .posters-container .poster {
+        height: 45vh;
+    }
+}
